@@ -23,7 +23,22 @@ public class PrintFormat {
 
         // %f 사이의 값을 주어서 기능을 활용할 수  있다. 12는 총 12칸을 차지한다.
         // 012는 12칸을 사용하는데 빈칸이 있으면 빈칸을 0으로 채운다.
+        // -는 왼쪽 정렬, 없는 것은 오른쪽 정렬
         // %.1는 실수를 나타내는 길이
-        System.out.printf("키는 %.1f\n", 172.2135453);
+        System.out.printf("키는 %.1f\n", 172.2135453); //Nice!!
+        System.out.printf("키는 %-12.1f\n", 172.2135453);
+        System.out.printf("키는 %012.1f\n", 172.2135453);
+        //System.out.printf("키는 %-012.1f 입니다", 172.2135453); // 이건 안된다.
+
+        int won = 230000000;
+        System.out.printf("won: %d원\n", won);
+        System.out.printf("won: %,d원\n", won); //Nice!!
+        System.out.printf("won: %12d원\n", won);
+        System.out.printf("won: %-12d원\n", won);
+        System.out.printf("won: %012d원\n", won);
+
+        String result = String.format("%,d", won);
+        System.out.println("result: " + result); //정수의 값을 문자열로!
+
     }
 }
