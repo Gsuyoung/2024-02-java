@@ -15,7 +15,7 @@ public class MissionIf3 {
         }
 
         System.out.printf("%d는(은) %c수입니다.\n",
-                input, (input % 2 == 0 ? '짝': '홀'));
+                input, (input % 2 == 0 ? '짝': '홀')); // 결과타입은 문자(character type)
 
         //11는(은) 홀수입니다.
 
