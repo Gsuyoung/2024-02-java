@@ -12,7 +12,8 @@ public class WhileBasic {
          */
         int n = 0;
         while(n<5) {
-            System.out.println("I Like Java " + (n++));
+            System.out.println("I Like Java " + n);
+            n++;
         }
         System.out.println(" --- 끝 --- ");
     }

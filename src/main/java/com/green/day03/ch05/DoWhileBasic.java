@@ -19,8 +19,10 @@ public class DoWhileBasic {
 
         int n2 = 5;
         do {
-            System.out.println("I like Java" + (n2++));
+            System.out.println("I like Java" + n2);
+            n2++;
         } while(n2 < 5);
+
         System.out.println(" --- 끝 ---");
     }
 }
