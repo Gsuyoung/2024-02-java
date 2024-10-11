@@ -5,6 +5,19 @@ public class MissionForInFor5 {
         int star = (int) (Math.random() * 6.0 + 3);
         System.out.print("star 값은? " + star);
 
+        /*
+        star = 3
+        __*
+        _**
+        ***
+
+        star = 4
+        ___*
+        __**
+        _***
+        ****
+         */
+
         for (int i=0; i<=star; i++) {
             for (int j=0; j<i; j++) {
                 System.out.print("*");
