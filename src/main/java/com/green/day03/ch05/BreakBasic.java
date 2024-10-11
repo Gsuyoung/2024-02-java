@@ -5,10 +5,11 @@ public class BreakBasic {
         int n = 1;
         boolean search = false;
 
+        //처음 만나는 5의 배수이자 7의 배수인 수를 찾는 반복문
         while(n < 100) {
             if(((n % 5) == 0) && ((n % 7) == 0)) {
                 search = true;
-                break;
+                break; //while문 탈출
             }
             n++;
         }
