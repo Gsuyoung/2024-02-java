@@ -7,8 +7,8 @@ public class BankAccountTest {
         //ba는 BankAccount 객체 주소값만 담을 수 있는 참조변수이다.
         //제한은 많을 수록 좋다.
         //객체를 만들기위해서는 new 를 사용해야한다.
-        BankAccount ba = new BankAccount(); // BankAccount ba --> 레퍼런스 타입(참조타입)
-
+        BankAccount ba = new BankAccount();
+        // BankAccount ba --> 레퍼런스 타입(참조타입)
         ba.deposit(1000);
         ba.checkMyBalance();
         ba.deposit(2000);
