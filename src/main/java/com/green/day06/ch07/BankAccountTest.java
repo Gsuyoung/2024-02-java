@@ -9,12 +9,13 @@ public class BankAccountTest {
         //객체를 만들기위해서는 new 를 사용해야한다.
         BankAccount ba = new BankAccount();
         // BankAccount ba --> 레퍼런스 타입(참조타입)
-        ba.deposit(1000);
+        // BankAccount 객체 주소값을 저장할 수 있는 변수명 ba를 정의
+        ba.deposit(1000); //객체 주소값(ba).(메소드호출)
         ba.checkMyBalance();
         ba.deposit(2000);
         ba.checkMyBalance();
 
-        BankAccount ba3 = new BankAccount();
+        BankAccount ba3 = new BankAccount();//또다른 객체(공간이다르다)를 만들었다.
         ba3.checkMyBalance(); //balance : 0
         ba3.deposit(40000);
         ba3.withdraw(1000);
@@ -24,6 +25,6 @@ public class BankAccountTest {
 
 
         //BankAccount ba2 = new Sring("안녕"); ba2는 String객체 주소값을 담을 수 없다.
-        String str = new String("안녕");
+        String str = new String("안녕"); //참조변수str 객체화
     }
 }
