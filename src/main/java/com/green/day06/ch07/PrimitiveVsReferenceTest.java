@@ -13,7 +13,7 @@ public class PrimitiveVsReferenceTest {
         m_num값을 변경한다고 하여 main_num값이 변경되는 것은 아니다. 왜? 다른 공간이기 때문
          */
         int num = 10; //primitive type(소문자로 시작)
-        changNum(num);
+        changeNum(num);
         System.out.println("num = " + num); //10
 
         /*
@@ -23,15 +23,15 @@ public class PrimitiveVsReferenceTest {
          */
         NumberBox nb = new NumberBox(); //reference type(대문자로 시작)
         nb.num = 10;
-        changNum(nb);
+        changeNum(nb);
         System.out.println("nb.num = " + nb.num); //100
     }
 
-    public static void changNum(int num) {
+    public static void changeNum(int num) {
         num = 100;
     }
 
-    public static void changNum(NumberBox nb) {
+    public static void changeNum(NumberBox nb) {
         nb = new NumberBox(); //10 ---> 새로운 객체가 만들어진 상태
         nb.num = 100;
     }
