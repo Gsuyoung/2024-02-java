@@ -7,12 +7,12 @@ public class Car {
 
     /*
         this 사용법은 2가지가 있다.
-        1. this. (나 자신의 주소값이 들어있는 상수다) : 멤버필드, 멤버메소드 사용, this. 생략가능할 때가 있다.
+        1. this. (나 자신의 객체 주소값이 들어있는 상수다) : 멤버필드, 멤버메소드 사용, this. 생략가능할 때가 있다.
         2. this() : 생성자에서 다른 생성자 호출시 사용 가능
      */
 
     public Car() {
-        this("white", "auto",4);
+        this("white", "auto",4); //하드코딩(기본생성자로 객체 생성시 항상 같은 값이다.)
         //this.introduce();
         //introduce();
     }
@@ -29,7 +29,7 @@ public class Car {
     }
 
     public void introduce() {
-        //this("dd","ddd",12");
+        //this("dd","ddd",12);
         //introduce메소드가 호출이 된다는 말은 이미 객체생성이 끝난 이후다.
         //생성자는 객체 생성시에만 호출할 수 있기 때문에 객체생성 이후에는 호출 불가다.
         System.out.printf("%s 컬러의 %s 기어를 가진 %d개의 문짝이 있는 자동차\n"

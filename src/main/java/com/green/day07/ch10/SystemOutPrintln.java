@@ -24,7 +24,7 @@ public class SystemOutPrintln {
         out.println();
 
         //System : 클래스(대문자로 시작)
-        //out : static final 멤버필드, PrintStream 객체의 주소값을 담을 수 있다.
+        //out : static final 멤버필드, PrintStream 객체의 주소값을 담을 수 있다.(레퍼런스변수이기때문에)
         //println(): 메소드 --> PrintStream이라는 객체안에 out의 주소값
 
         /*

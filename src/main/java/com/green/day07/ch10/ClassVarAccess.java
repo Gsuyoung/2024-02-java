@@ -13,9 +13,7 @@ public class ClassVarAccess {
 
 class AccessWay {
     static int num = 0;
-    AccessWay() {
-        increaseCnt();
-    }
+    AccessWay() { increaseCnt(); }
     void increaseCnt() { //static이 붙지않은 메소드도 static이 붙은 메소드를 사용할 수 있다.
                         //이미 메모리에 값이 올라가있기때문에
         num++;

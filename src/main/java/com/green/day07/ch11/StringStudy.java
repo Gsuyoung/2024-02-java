@@ -26,7 +26,7 @@ public class StringStudy {
         //4,5,6 자리의 문자열을 리턴
 
         String fileNm = "nice_V.ery.Nice.jpg";
-        System.out.println(".의 위치값: " + fileNm.indexOf(".")); //왼쪽에서 오른쪽 방향으로 가장 빨리 찾은 index값을 리턴
+        System.out.println(".의 위치값: " + fileNm.indexOf(".")); //왼쪽에서 오른쪽 방향으로 가장 빨리 찾은 index값(위치값)을 리턴
 
         System.out.println("마지막.의 위치값: " + fileNm.lastIndexOf("."));
 

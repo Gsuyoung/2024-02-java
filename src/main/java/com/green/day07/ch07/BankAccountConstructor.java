@@ -1,6 +1,6 @@
 package com.green.day07.ch07;
 
-class BankAccount2 {
+class BankAccount2 { //1)맴버필드
     private String accNumber; //계좌번호
     private String ssNumber; //주민번호
     private int balance;
@@ -11,6 +11,7 @@ class BankAccount2 {
     1. 이름이 클래스명과 같다.
     2. 반환형(리턴타입)을 작성하지 않는다.
 
+    생성자를 호출한다는 것은 객체 생성을 하고 싶다는 뜻이다.
     생성자는 객체 생성할때만 호출할 수 있다.
     객체생성 이후에는 호출 불가
 
@@ -25,7 +26,7 @@ class BankAccount2 {
     객체에서 값을 초기화하는 생성자는 있지만 setter가없을때의도한 이유 : 상수화하고싶어서
     더이상 값을 바꿀 수 없기때문에
      */
-    //기본 생성자 모습
+    // 2)기본 생성자 모습
     BankAccount2() {
         super();//생략 가능
     }

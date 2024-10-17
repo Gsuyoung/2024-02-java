@@ -11,11 +11,13 @@ public class MethodOverLoading {
 
     생성자도 메소드의 한 종류기때문에 오버로딩이 된다.
      */
+    //생성자 오버로딩
     public void MethodOverLoading() {} //void를 적는순간 메소드가되고 기본생성자가 없어진다.
     public MethodOverLoading(int n1) {}
     public MethodOverLoading(int n1, int n2) {}
     public MethodOverLoading(long n1, int n2) {}
 
+    //메소드 오버로딩
     public void sum(int n1){}
     public void sum(int n1, int n2) {}
     public void sum(String str, int n1) {}
