@@ -2,10 +2,10 @@ package com.green.day08.ch13;
 
 public class ArrayIsInstance2 {
     public static void main(String[] args) {
-        Box[] arr = new Box[5];
+        Box[] arr = new Box[5]; //Box 배열의 주소값이 들어간다.
         System.out.println(arr.length);
 
-        Box b1 = new Box("안녕");
+        Box b1 = new Box("안녕"); //Box 주소값이 들어간다.
         System.out.println(b1); // = System.out.println(b1.toString());
 
         arr[0] = b1;

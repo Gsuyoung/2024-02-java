@@ -3,6 +3,14 @@ package com.green.day08.ch11;
 //p.264 ~ 269
 public class BuildString {
     public static void main(String[] args) {
+        StringBuilder sb3 = new StringBuilder("123");
+        sb3.append(45678).delete(0, 2).replace(0, 3, "kk"); //체이닝기법
+        System.out.println("sb3: " + sb3);
+        // 123
+        // 12345678
+        // 345678
+        // kk678
+
         //문자열 "123"이 저장된 인스턴스 생성
         StringBuilder sb = new StringBuilder("123");
         sb.append(45678); //뒤쪽에 붙일때 사용
@@ -26,7 +34,9 @@ public class BuildString {
         System.out.println("sb: " + sb);
         System.out.println("str: " + str);
 
-        StringBuilder sb2 = sb.reverse().replace(0, 2, "kk"); //체이닝 기법, return this가 핵심이다.
+        StringBuilder sb2 = sb.reverse().replace(0, 2, "kk");
+        //체이닝 기법, 각 메소드에서 return this를 하기 때문
+
         System.out.println("sb: " + sb);
         System.out.println("sb == sb2: " + (sb == sb2));
 
