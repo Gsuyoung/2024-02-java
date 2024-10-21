@@ -1,6 +1,6 @@
 package com.green.day09.ch13;
 
-public class MyArraysTest {
+public class MyArrays {
     public static String toString(int[] arr) {
         StringBuilder sb = new StringBuilder("[");
         int lastIdx = arr.length - 1;
