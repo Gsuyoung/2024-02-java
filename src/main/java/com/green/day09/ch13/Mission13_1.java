@@ -41,4 +41,3 @@ public class Mission13_1 {
         return max;
     }
 }
-
