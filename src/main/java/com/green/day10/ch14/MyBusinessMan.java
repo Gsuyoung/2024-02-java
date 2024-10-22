@@ -9,7 +9,7 @@ public class MyBusinessMan {
         //BusinessMan 클래스 안에는 tellYourSelf메소드가 없지만 호출할 수 있다.
         //Man 클래스로부터 상속을 받았기 때문이다.
 
-        System.out.println(man1.toString());
+        System.out.println  (man1.toString());
         //같은 이유로 Object 클래스로부터 상속받았기 때문에 toString메소드를 호출할 수 있다.
 
         System.out.println("--------------------------");
@@ -49,6 +49,7 @@ class BusinessMan extends Man { //상속받는다
         super(name);
         //super 소괄호를 생략하면 자동으로 super(); 이 내용만 추가된다.
         //super()는 생성자의 가장 위에 작성이 되어야한다.(주의!!!!)
+        //super. --> 멤버필드나 멤버메소드 호출(멤버필드는 대체로 private이므로 멤버메소드 호출)
 
         //빨간줄 안뜨는 해결 방법 2가지
         //1. 부모에 기본 생성자를 만들어준다.
