@@ -10,6 +10,7 @@ public class PolyStudy {
        안다 모른다 구분은 해당 메소드를 가지고 있냐없냐로 구분 ( 상속 받은 메소드도 알고 있는 메소드 )
 
     레퍼런스 변수끼리의 형변환이 가능한데 상속관계에서만 가능
+    부모-자식 간에만 형변환이 가능하지 형제끼리는 안된다.
      */
     public static void main(String[] args) {
         Cat cat = new Cat();
@@ -55,9 +56,24 @@ public class PolyStudy {
         System.out.println(ani4 instanceof BullDog); //false
         System.out.println(ani4 instanceof Bird); //true
 
+        Cat cat2 = new Cat();
+        Dog dog2 = new Dog();
+        BullDog bullDog = new BullDog();
+        Bird bird = new Bird();
 
+        //동물을 울려주세요.
+        animalCrying(cat2); //야옹~ 야옹~
+        animalCrying(dog2); //멍! 멍!
+        animalCrying(bullDog2); //월! 월!
+        animalCrying(bird); //까악~ 까악~
 
         System.out.println("-- 끝 --");
+    }
+    static void animalCrying(Animal animal) {
+        animal.crying();
+        if(animal instanceof BullDog) {
+            ((BullDog)animal).jump();
+        }
     }
 }
 

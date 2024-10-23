@@ -4,6 +4,9 @@ public class OverridingToString {
     public static void main(String[] args) {
         Cake c = new Cake();
         System.out.println(c);
+        System.out.println(c.toString());//=위문장과같다
+
+        System.out.println(c.equals(c.toString())); //false --> c의타입은 Cake toString은 String이 리턴
         CheeseCake cheeseCake = new CheeseCake();
         System.out.println(cheeseCake);
 
