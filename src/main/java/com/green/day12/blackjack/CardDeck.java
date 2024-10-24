@@ -3,7 +3,7 @@ package com.green.day12.blackjack;
 public class CardDeck {
     //Card 객체 주소값 52개를 저장할 수 있어야 한다.
     private final Card[] cards;
-    private final String[] patterns;
+    private final String[] patterns; //기본적으로 디폴트 값인 null이 들어가있음
     private int selectedIdx = 0; // 외부에 줘야할 카드의 index값
 
     public CardDeck() {
@@ -12,15 +12,15 @@ public class CardDeck {
 
         int idx = 0;
         for (int i = 0; i < patterns.length; i++) { //0,1,2,3
-            String pattern = patterns[i];
+            String pattern = patterns[i];//4번반복
             for (int j = 1; j <= 13; j++) { //1~13
-                String denomination = getDenomination(j);
+                String denomination = getDenomination(j); //52번반복
                 cards[idx++] = new Card(pattern, denomination);
 
                 //cards[idx++] = new Card(patterns[i], getDenomination(j));
             }
         }
-       /* 섞어주세요.
+       /* 섞어주세요.(랜덤, 스와핑)
         Card temp;
         for (int i = 0; i < cards.length; i++) {
             int Ridx = (int)(Math.random()* cards.length);
@@ -59,13 +59,13 @@ public class CardDeck {
 
     //주소값 하나씩 리턴, 리턴 주소값 지워야되고, selectedIdx 이용하여 해결
     public Card draw() {
-        if(selectedIdx == (cards.length)-1) {
+        if(selectedIdx == (cards.length)) {
             return null;
         }
-            Card c = cards[selectedIdx];
+            Card tmp = cards[selectedIdx];
             cards[selectedIdx] = null;
             selectedIdx++;
-            return c;
+            return tmp;
         }
         public void checkCard () {
             for (Card c : cards) {
