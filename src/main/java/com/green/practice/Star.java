@@ -1,4 +1,4 @@
-package com.green.day13;
+package com.green.practice;
 
 import java.util.Scanner;
 
