@@ -32,9 +32,14 @@ class CardTest2 {
         gamer.receiveCard(cd.draw());
         gamer.receiveCard(cd.draw());
         gamer.showYourCards();
+        System.out.println("-------------------");
+        System.out.println(gamer.getPoint()); //point값이 출력될 수 있도록
+
 
         List<Card> list = gamer.openCards();
         System.out.println(list);
+
+
     }
 }
 
@@ -46,5 +51,13 @@ class CardTest3 {
         dealer.receiveCard(cd.draw());
         dealer.receiveCard(cd.draw());
         dealer.showYourCards();
+    }
+}
+
+class CardTest4 {
+    public static void main(String[] args) {
+        Rule rule = new Rule();
+        rule.getWinner(null,null);
+
     }
 }

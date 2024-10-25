@@ -8,7 +8,7 @@ public class Gamer {
     //ArrayList 사용할꺼임
     //멤버필드 선언, 변수명은 cards
     private final List<Card> cards;
-    private int point;
+    protected int point;
 
     public Gamer() {
         cards = new ArrayList();
@@ -26,6 +26,10 @@ public class Gamer {
         String str = "10";
         int val = Integer.parseInt(str); //val 변수에 10 정수값이 주입된다.(문자열을 정수로)
         cards.add(c1);
+    }
+
+    protected int getPoint() { //point값 출력
+        return point;
     }
 
     public void showYourCards() {
