@@ -16,8 +16,8 @@ public class PrintableInterface {
         Printable p2 = new PrintableImpl();
         p2.print("dddd");
         System.out.println(p2.NUM);
-        System.out.println(Printable.NUM);
-        //Printable.NUM = 10; //값 변경 불가
+        System.out.println(Printable.NUM);//(인터페이스명.멤버필드명)
+        //Printable.NUM = 10; //상수라서 값 변경 불가
     }
 }
 
