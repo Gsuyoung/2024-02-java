@@ -11,7 +11,6 @@ public class ExceptionStudy2 {
         try {
             r = div(10, 2);
         } catch (Exception e) {
-            throw new RuntimeException(e);
         }
         System.out.println("r: " + r);
     }

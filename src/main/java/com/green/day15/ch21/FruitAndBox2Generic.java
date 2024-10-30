@@ -3,10 +3,10 @@ package com.green.day15.ch21;
 //제네릭은 실행시점에 타입이 정해진다.
 public class FruitAndBox2Generic {
     public static void main(String[] args) {
-        BoxGeneric<Apple> appleBox = new BoxGeneric(new Apple());
+        BoxGeneric<Apple> appleBox = new BoxGeneric<>(new Apple());
         Apple apple = appleBox.getBox();
 
-        BoxGeneric<Orange> orangeBox = new BoxGeneric(new Orange());
+        BoxGeneric<Orange> orangeBox = new BoxGeneric<>(new Orange());
         Orange orange = orangeBox.getBox();
 
         //new 부분에 <>를 생략하면 객체의 타입은 제네릭의 타입인 Object가 되는 것 같음.
@@ -14,7 +14,7 @@ public class FruitAndBox2Generic {
         //new 부분에 <>를 작성하는 것이 성능에 도움이 된다.
         BoxGeneric<Orange> orangeBox2 = new BoxGeneric(new String());
         orangeBox2.getBox();
-        //FruitBoxGeneric<Orange> orangeBox3 = new FruitBoxGeneric<>(new String());
+        //BoxGeneric<Orange> orangeBox3 = new BoxGeneric<>(new String());
 
     }
 }
