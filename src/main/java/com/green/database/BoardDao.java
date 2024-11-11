@@ -79,7 +79,7 @@ public class BoardDao {
              ; PreparedStatement ps = conn.prepareStatement(sql)) {
 
             ps.setInt(1, boardId);
-            rs = ps.executeQuery();
+            rs = ps.executeQuery(); //select만 executeQuery를 사용! result set타입
 
             if(rs.next()) {
                 Board board = new Board();
